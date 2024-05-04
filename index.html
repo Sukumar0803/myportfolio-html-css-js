@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sukumar- Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" href="assets/Favicon-icon.png">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Sukumar Kalpam</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Sukumar Kalpam</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="profile-pic-rounded" src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Sukumar Kalpam</h1>
+      <p class="section__text__p2">Senior Software Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="download('./assets/resume-example.pdf','MyResume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/sukumarkalpam/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/Sukumar0803'" />
+        <img src="./assets/leetcode_logo_icon_145113.png" alt="My leet Code Profile" class="icon"
+          onclick="location.href='https://leetcode.com/kalpamsukumar/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-2.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ years <br />Fullstack Development<br /><strong><i>Primary:</i></strong> Backend</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelor of Technology (B.Tech) in ECE<br /> Prathyusha Engineering
+              College, 2020</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Results-driven Senior Software Engineer with expertise in Java, Spring Boot Microservices, Spring Batch, and
+            Angular.
+            Proven track record in optimizing the Sustainment Lifecycle for Disney Vacation Club’s OMS application,
+            delivering over
+            100 issue fixes and introducing 5+ platform features to enhance business functionality. Committed to
+            delivering excellence
+            through a comprehensive software engineering approach.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Angular</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Core Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Spring Boot</h3>
+                <h5><i>Microservices & Rest API's</i></h5>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Spring Batch</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Spring Data JPA</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Junit Testing</h3>
+                <div class="frameworks-small-size">
+                  <p><strong><i>Frameworks:</i></strong> Junit5, Mockito, Easy Mock, Power Mock.</p>
+                </div>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">DataBases</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Maria DB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>My SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certifications'" />
+  </section>
+  <section id="certifications">
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">Achievements</h1>
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">SOLID Principles</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 certificate-btn" onclick="viewCertificate('./assets/SOLID Principles.png')">
+              View Certificate
+            </button>
+            <button class="btn btn-color-2 certificate-btn"
+              onclick="download('./assets/SOLID Principles.png', 'SOLID PrinciplesCertificate.png')">
+              Download Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Build And Deploy API's</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 certificate-btn"
+              onclick="viewCertificate('./assets/Build and Deploy -Masterclass -Certificate.png')">
+              View Certificate
+            </button>
+            <button class="btn btn-color-2 certificate-btn"
+              onclick="download('./assets/Build and Deploy -Masterclass -Certificate.png', 'Build and Deploy APIS.png')">
+              Download Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Fundamentals of Docker & Kubernetes</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 certificate-btn"
+              onclick="viewCertificate('./assets/Fundamentals of Docker& Kubernetes.png')">
+              View Certificate
+            </button>
+            <button class="btn btn-color-2 certificate-btn"
+              onclick="download('./assets/Fundamentals of Docker& Kubernetes.png', 'Fundamentals of Docker & Kubernetes.png')">
+              Download Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Learn FlexBoxes </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 certificate-btn" onclick="viewCertificate('./assets/Learn Flexboxes.png')">
+              View Certificate
+            </button>
+            <button class="btn btn-color-2 certificate-btn"
+              onclick="download('./assets/Learn Flexboxes.png', 'Learn Flexboxes.png')">
+              Download Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Streams and Lamdas</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 certificate-btn"
+              onclick="viewCertificate('./assets/Streams and Lamdas.png')">
+              View Certificate
+            </button>
+            <button class="btn btn-color-2 certificate-btn"
+              onclick="download('./assets/Streams and Lamdas.png', 'Streams and Lamdas.png')">
+              Download Certificate
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:kalpamsukumar@gmail.com">kalpamsukumar@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/sukumarkalpam/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Sukumar Kalpam. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
